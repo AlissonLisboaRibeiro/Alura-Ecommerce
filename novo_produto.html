@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Ecommerce - AluraGeek</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="novo_produto.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixaCabecalho">
+                <div class="Topo">
+                    <div class="Esquerda">
+                        <img src="assets/Logo.png" alt="AluraGeek Logo" class="LogoAlura">
+                        <div class="barraPesquisa">
+                            <input type="text" class="TextoProcura" placeholder="O que deseja encontrar?">
+                            <img src="assets/lupa.png">
+                        </div>
+                    </div>
+                    <input type="button" class="botao_admin" id="botao_admin" value="Menu administrador">
+                </div>
+            </div>
+        </header>
+        <main>
+            <form>
+                <div class="tudo">
+                    <div class="caixa">
+                        <div class="formulario">
+                            <div class="titulo">
+                                <h1>Adicionar novo produto</h1>
+                            </div>
+                            <div class="caixa_texto">
+                                <strong>URL da imagem</strong>
+                                <input type="text"  class="text" name="email" required>
+                            </div>
+                            <div class="caixa_texto">
+                                <strong>Categoria</strong>
+                                <input type="text"  class="textoCategoria" name="email" required>
+                            </div>
+                            <div class="caixa_texto">
+                                <strong>Nome do produto</strong>
+                                <input type="text"  class="textoNome" name="email" required>
+                            </div>
+                            <div class="caixa_texto">
+                                <strong>Preço do produto</strong>
+                                <input type="text"  class="textoPreco" name="preco" required>
+                            </div>
+                            <div class="caixa_texto_descricao">
+                                <strong>Descrição do produto</strong>
+                                <textarea class="textoDescricao" name="descricao" id="textoDescricao" required></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" class="enviar" name="enviar" value="Adicionar produto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="tudo">
+                <div class="conteudo">
+                    <div class="logo">
+                        <img src="assets/Logo.png" alt="AluraGeek Logo">
+                    </div>
+                    <div class="links">
+                        <a href="">Quem somos nós</a>
+                        <a href="">Política de privacidade</a>
+                        <a href="">Programa de fidelidade</a>
+                        <a href="">Nossas lojas</a>
+                        <a href="">Quero ser franqueado</a>
+                        <a href="">Anuncie aqui</a>
+                    </div>
+                    <div class="contato">
+                        <h2>Fale conosco</h2>
+                        <form>
+                            <div class="caixa_titulo">
+                                <strong>Nome</strong>
+                                <input type="text"  class="text" name="nome" placelabel="Nome">
+                            </div>
+                            <div class="caixa_mensagem">
+                                <textarea class="text" name="mensagem" placeholder="Insira uma mensagem"></textarea>
+                            </div>
+                            <input type="button" class="enviar" name=" enviar" value="Enviar mensagem">
+                        </form>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <p>Desenvolvido por Alisson Lisboa Ribeiro</p>
+                    <p>2022</p>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
