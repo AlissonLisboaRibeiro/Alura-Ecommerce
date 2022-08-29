@@ -67,7 +67,7 @@ main .tudo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 92px;
+    padding: 92px 0; 
 }
 
 main .tudo .Login {
@@ -136,13 +136,22 @@ footer .tudo {
     width: 1440px;
 }
 
-
 footer .conteudo {
     background-color: #EAF2FD;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 64px;
+    gap: 60px;
+}
+
+footer .conteudo .esquerda {
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 64px;
     gap: 60px;
 }
 
@@ -160,7 +169,7 @@ footer a {
     text-decoration: none;
 }
 footer .contato{
-    width: 550px;
+    width: 570px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -200,7 +209,7 @@ footer .contato textarea{
     border: none;
     background: #FFFFFF;
     width: 550px;
-    height: 85px;
+    height: 65px;
     font-size: 16px;
     color: #464646;
 }
@@ -259,4 +268,470 @@ footer .rodape {
     font-style: normal;
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    header .caixaCabecalho {
+        width: 768px;
+        height: 72px;
+    }
+
+    header .caixaCabecalho .Topo {
+        width: 768px;
+        height: 72px;
+        padding: 16px, 32px, 16px, 32px;
+    }
+    header .caixaCabecalho .Topo .botaoLogin {
+        display: none;
+    }
+    header .caixaCabecalho .Topo .Esquerda {
+        width: 404px;
+        gap: 32px;
+    }
+    header .caixaCabecalho .Topo .Esquerda .LogoAlura {
+        width: 100px;
+        height: 28px;
+    }
+    
+    header .caixaCabecalho .Topo .Esquerda .barraPesquisa  {
+        width: 272px;
+        height: 40px;
+    }
+
+    header .caixaCabecalho .Topo .Esquerda .barraPesquisa .TextoProcura {
+        width: 260px;
+    }
+    main .tudo{
+        background-color: #E5E5E5;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    main .tudo .Login {
+        width: 704px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 32px;
+    }
+    
+    main .tudo .Login h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 16px;
+        color: #464646;
+    }
+    
+    main .tudo .Login .text, strong  {
+        color: #464646;
+    }
+    
+    main .tudo .Login strong  {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    main .tudo .Login .text  {
+        font-family: Raleway;
+        font-size: 16px;
+        width: 275px;
+        height: 53px;
+        color: #464646;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+    }
+    
+    main .tudo .Login .caixa_email, .caixa_senha {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 275px;
+        box-shadow: 0px 1px #CCCCCC;
+    }
+    
+    main .tudo .Login .enviar {
+        width: 110px;
+        height: 51px;
+        color: #FFFFFF;
+        background-color: #2A7AE4;
+        font-style: normal;
+        font-size: 14px;
+        padding: 16px;
+        border: none;
+    }
+    
+    main .tudo .Login .enviar:hover {
+        color:  #2A7AE4;
+        border-style: solid;
+        border-color: #2A7AE4;
+        border-width: 2px;
+        background-color: #D4E4FA;
+    }
+
+    footer {
+        width: 768px;
+    }
+    footer .tudo {
+        width: 768px;
+    }
+    
+    footer .conteudo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+        padding: 32px;
+        gap: 16px;
+    }
+    
+    footer .tudo .conteudo .esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 254px;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    footer .tudo .conteudo .esquerda .links{
+        width: 176px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    footer a {
+        gap: 20px;
+        text-decoration: none;
+    }
+
+    footer .contato{
+        width: 434px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        vertical-align: middle;
+        gap: 18px;
+    }
+
+    footer .contato h2 {
+        font-weight: bold;
+        color: #464646;
+    }
+    
+    footer .contato form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    footer .contato input.text{
+        padding: 12px 3px;
+        border: none;
+        width: 418px;
+        font-size: 16px;
+    }
+    
+    footer .contato textarea{
+        padding: 12px 3px;
+        resize: none;
+        border: none;
+        width: 418px;
+        height: 65px;
+        font-size: 16px;
+    }
+    
+    footer .contato input:focus,textarea:focus{
+        outline: none;
+    }
+    
+    footer .contato .caixa_titulo {
+        width: 418px;
+        box-shadow: 0px 1px #CCCCCC;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+    
+    footer .contato .caixa_mensagem {
+        width: 418px;
+        height: 82px;
+        font-size: 12px;
+        box-shadow: 0px 1px #CCCCCC;
+        gap: 8px;
+        flex-grow: 1;
+        padding: 14px 8px 8px 8px;
+    }
+    
+    footer .contato p {
+        font-weight: 700;
+    }
+    
+    footer .contato input.enviar {
+        width: 151px;
+        height: 40px;
+        padding: 12px 16px;
+    }
+    
+    footer .rodape {
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        text-align: center;
+        padding: 20px;
+    }   
+}
+
+@media screen and (max-width: 360px) {
+    header .caixaCabecalho {
+        width: 360px;
+        height: 60px;
+    }
+
+    header .caixaCabecalho .Topo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 360px;
+        height: 60px;
+    }
+
+    header .caixaCabecalho .Topo .Esquerda {
+        width: 360px;
+    }
+
+    header .caixaCabecalho .Topo .Esquerda .LogoAlura {
+        width: 100px;
+        height: 28px;
+    }
+     
+    header .caixaCabecalho .Topo .Esquerda .barraPesquisa {
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    header .caixaCabecalho .Topo .Esquerda .barraPesquisa .TextoProcura {
+        display: none;
+    }
+
+    main .tudo{
+        background-color: #E5E5E5;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    main .tudo .Login {
+        width: 296px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 32px;
+    }
+    
+    main .tudo .Login h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 16px;
+        color: #464646;
+    }
+    
+    main .tudo .Login .text, strong  {
+        color: #464646;
+    }
+    
+    main .tudo .Login strong  {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    
+    main .tudo .Login .text  {
+        font-family: Raleway;
+        font-size: 16px;
+        width: 275px;
+        height: 53px;
+        color: #464646;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+    }
+    
+    main .tudo .Login .caixa_email, .caixa_senha {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 275px;
+        box-shadow: 0px 1px #CCCCCC;
+    }
+    
+    main .tudo .Login .enviar {
+        width: 110px;
+        height: 51px;
+        color: #FFFFFF;
+        background-color: #2A7AE4;
+        font-style: normal;
+        font-size: 14px;
+        padding: 16px;
+        border: none;
+    }
+    
+    main .tudo .Login .enviar:hover {
+        color:  #2A7AE4;
+        border-style: solid;
+        border-color: #2A7AE4;
+        border-width: 2px;
+        background-color: #D4E4FA;
+    }
+
+    footer {
+        width: 360px;
+        height: 700px;
+        padding: 0px;
+    }
+
+    footer .tudo {
+        width: 360px;
+        height: 700px;
+        padding: 0px;
+    }
+    
+    footer .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0px;
+        width: 360px;
+        height: 622px;
+    }
+    
+    footer .tudo .conteudo .esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 283px;
+        gap: 16px;
+    }
+
+    footer .tudo .conteudo .esquerda .logo{
+        text-align: center;
+        width: 360px;
+        height: 51px;
+    }
+
+
+    footer .tudo .conteudo .links{
+        width: 300px;
+        height: 216px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer a {
+        text-decoration: none;
+    }
+
+    footer .contato{
+        width: 360px;
+        height: 279px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    footer .contato h2 {
+        font-weight: bold;
+        color: #464646;
+    }
+    
+    footer .contato form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+    footer .contato input.text{
+        padding: 12px 3px;
+        border: none;
+        width: 318px;
+        font-size: 16px;
+    }
+    
+    footer .contato textarea{
+        padding: 12px 3px;
+        resize: none;
+        border: none;
+        width: 318px;
+        height: 55px;
+        font-size: 16px;
+    }
+    
+    footer .contato input:focus,textarea:focus{
+        outline: none;
+    }
+    
+    footer .contato .caixa_titulo {
+        width: 318px;
+        box-shadow: 0px 1px #CCCCCC;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+    
+    footer .contato .caixa_mensagem {
+        width: 318px;
+        height: 82px;
+        font-size: 12px;
+        box-shadow: 0px 1px #CCCCCC;
+        gap: 8px;
+        flex-grow: 1;
+        padding: 14px 8px 8px 8px;
+    }
+    
+    footer .contato p {
+        font-weight: 700;
+    }
+    
+    footer .contato input.enviar {
+        width: 151px;
+        height: 40px;
+        padding: 12px 16px;
+
+    }
+    
+    footer .rodape {
+        width: 340px;
+        height: 58px;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        text-align: center;
+        padding: 10px;
+    }   
 }
