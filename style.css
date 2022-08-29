@@ -242,7 +242,7 @@ footer .conteudo {
     gap: 60px;
 }
 
-footer .tudo .conteudo .Esquerda {
+footer .tudo .conteudo .esquerda {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
